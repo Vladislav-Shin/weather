@@ -48,7 +48,7 @@ const useService = () => {
       weekday: days[new Date(item.dt_txt.split(" ")[0]).getDay()],
       day: new Date(item.dt_txt.split(" ")[0]).toLocaleString("ru", options),
       id: item.dt_txt.slice(8, 10),
-      temp: Math.floor(item.main.temp) > 0 ? `+${Math.floor(item.main.temp)}` : `${Math.floor(item.main.temp)}`,
+      temp: Math.round(item.main.temp) > 0 ? `+${Math.round(item.main.temp)}` : `${Math.round(item.main.temp)}`,
       humidity: `${item.main.humidity} %`,
       rainfall: `${item.pop} %`,
       wind: `${Math.round(item.wind.speed)} м/с`,

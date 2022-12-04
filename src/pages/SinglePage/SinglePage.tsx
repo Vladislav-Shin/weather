@@ -48,10 +48,12 @@ const SinglePage = () => {
   }, [data]);
 
   const goBack = () => navigate(-1);
+  console.log(showWeather);
 
   const renderShowWeather = (data: Array<IWeather>) => {
     const res = data.map(_transformWeather).map((item) => {
       const { temp, dt_txt } = item;
+      
       return (
         <div
           className={classNames(styles.item)}
