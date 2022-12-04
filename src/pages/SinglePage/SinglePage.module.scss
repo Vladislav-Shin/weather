@@ -1,0 +1,32 @@
+.item {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+
+  &__time {
+    margin-bottom: 1rem;
+  }
+}
+
+.section {
+  text-align: center;
+}
+
+.title {
+  font-weight: 700px;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: var(--switcher-text-color);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  margin-bottom: 2.5rem;
+  box-shadow: "";
+  background-color: var(--switcher-color);
+  color: var(--switcher-text-color);
+}

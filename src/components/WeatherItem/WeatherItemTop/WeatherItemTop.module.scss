@@ -1,0 +1,29 @@
+.item {
+  display: flex;
+  padding: 0.5rem;
+  background: var(--white);
+  border-radius: 0.3rem;
+  align-items: center;
+  background-color: var(--switcher-color);
+}
+
+.info {
+  color: var(--switcher-text-color)
+}
+
+.text {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: var(--switcher-text-color);
+  margin-right: 1rem;
+}
+
+.mod {
+  flex-direction: column;
+  color: var(--switcher-text-color)
+}
+
+.icon {
+  fill: var(--switcher-text-color)
+}

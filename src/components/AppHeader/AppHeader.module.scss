@@ -1,0 +1,27 @@
+:global {
+  body[data-theme='light'] {
+    --header-color: var(--gray-100);
+  }
+
+  body[data-theme='dark'] {
+    --header-color: var(--gray-400);
+  }
+}
+
+.header {
+  padding: 1.25rem;
+  background-color: var(--header-color)
+}
+
+.title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: var(--switcher);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

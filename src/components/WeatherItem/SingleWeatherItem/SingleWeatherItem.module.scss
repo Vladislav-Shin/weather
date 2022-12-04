@@ -1,0 +1,26 @@
+:global {
+  body[data-theme='light'] {
+    --switcher-color: var(--white);
+    --switcher-text-color: var(--gray-500);
+  }
+
+  body[data-theme='dark'] {
+    --switcher-color: var(--gray-300);
+    --switcher-text-color: var(--white);
+  }
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  background-color: var(--switcher-color);
+  margin-bottom: 2.5rem;
+  color: var(--switcher-text-color);
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+
+.svg {
+  stroke: var(--switcher-text-color);
+  fill: var(--switcher-color);
+}
